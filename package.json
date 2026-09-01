@@ -1,0 +1,20 @@
+{
+  "name": "mcp-server-local",
+  "version": "1.0.0",
+  "description": "Local stdio MCP server exposing read-only tools for an AWS Athena database, for use with Claude Desktop.",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-athena": "^3.600.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  }
+}
